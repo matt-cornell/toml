@@ -197,6 +197,10 @@ impl<'i> Raw<'i> {
     pub fn span(&self) -> Span {
         self.span
     }
+
+    pub fn encoding(&self) -> Option<Encoding> {
+        self.encoding
+    }
 }
 
 /// Location within the [`Source`]
