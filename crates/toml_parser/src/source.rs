@@ -193,6 +193,10 @@ impl<'i> Raw<'i> {
     pub fn is_empty(&self) -> bool {
         self.raw.is_empty()
     }
+
+    pub fn span(&self) -> Span {
+        self.span
+    }
 }
 
 /// Location within the [`Source`]
